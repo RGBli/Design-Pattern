@@ -7,7 +7,9 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class DynamicProxy {
-    private Subject subject;
+
+    // 这里的 Object 体现了动态代理的优势
+    private Object subject;
 
     public DynamicProxy(Subject subject) {
         this.subject = subject;
