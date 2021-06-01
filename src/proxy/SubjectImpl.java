@@ -1,6 +1,6 @@
 package proxy;
 
-public class SubjectImpl implements Subject{
+public class SubjectImpl implements Subject {
     @Override
     public void sayHello() {
         System.out.println("hello~");

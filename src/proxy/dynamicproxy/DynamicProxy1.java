@@ -6,12 +6,15 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-public class DynamicProxy {
+/**
+ * 通过创建匿名内部类实现动态代理
+ */
+public class DynamicProxy1 {
 
     // 这里的 Object 体现了动态代理的优势
     private Object subject;
 
-    public DynamicProxy(Subject subject) {
+    public DynamicProxy1(Subject subject) {
         this.subject = subject;
     }
 
