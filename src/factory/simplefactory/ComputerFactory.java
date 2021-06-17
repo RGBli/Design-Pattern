@@ -7,9 +7,9 @@ import factory.SurfaceBookComputer;
 public class ComputerFactory {
     public Computer createComputer(String type) {
         Computer c = null;
-        if (type.equals("macbook")) {
+        if (type.equals("Macbook")) {
             c = new MacbookComputer();
-        } else if (type.equals("surface")) {
+        } else if (type.equals("Surface")) {
             c = new SurfaceBookComputer();
         }
         return c;
