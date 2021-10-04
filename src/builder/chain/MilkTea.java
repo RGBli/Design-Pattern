@@ -1,5 +1,9 @@
-package builder;
+package builder.chain;
 
+/**
+ * 链式调用的建造者模式
+ * 以奶茶为例
+ */
 public class MilkTea {
     private String type;
     private String size;

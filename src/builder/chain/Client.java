@@ -1,6 +1,6 @@
-package builder;
+package builder.chain;
 
-public class User {
+public class Client {
     public void buyMilkTea() {
         MilkTea originalMilkTea = new MilkTea.MilkTeaBuilder("original").build();
         showMilkTea(originalMilkTea);
@@ -14,5 +14,10 @@ public class User {
 
     public void showMilkTea(MilkTea milkTea) {
         System.out.println(milkTea.toString());
+    }
+
+    public static void main(String[] args) {
+        Client c = new Client();
+        c.buyMilkTea();
     }
 }
